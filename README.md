@@ -67,8 +67,11 @@ Hooray!
 
 ## What if a value does not exist?
 For reading convenience, this system will silently fail--sort of. 
-All error messages (for example, if something fails to read) will be passed to all children who attempt to index any values
+
+All error messages (for example, if something fails to read) will be passed to all children who attempt to index any values.
+
 This is intentional, and is designed to allow you to see what key failed to read, without any extra stress or work (hopefully..)
+
 
 Thanks for coming to my ted talk.
 
