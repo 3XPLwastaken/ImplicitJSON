@@ -44,7 +44,7 @@ if let data = jsonString.data(using: .utf8) {
 A little too long for my liking,
 to read the same data using ImplicitJSON, the code would look like this:
 
-```
+```swift
 let data = """
 {
     "example" : "woah",
