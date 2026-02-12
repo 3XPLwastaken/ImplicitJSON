@@ -115,5 +115,20 @@ struct JSONValue {
         return "\(value)"
     }
     
+    // Returns the value (or error message) 
+    func getValue() -> Any {
+        return value
+    }
+    
+    // Returns nil if something went wrong at any time while reading the data.
+    // Useful in cases where you'll have default/backup values.
+    func requestValue() -> Any? {
+        if (succeeded == false) {
+            return nil
+        }
+        
+        return value
+    }
+    
     
 }
